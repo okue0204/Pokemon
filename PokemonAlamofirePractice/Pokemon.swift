@@ -96,23 +96,23 @@ struct Pokemon {
     // ポケモンのimageUrl
     let imageUrl: String
     // ポケモンのタイプ
-    let attribute: [Attribute]
+    let attributes: [Attribute]
     
 }
 
 extension Pokemon {
-    init?(json: JSON) {
+    init(json: JSON) throws {
         guard let id = json["id"].int,
               let name = json["name"].string,
-              let imageUrl = json["sprites"]["back_default"].string,
-              let attribute = json["types"].array else {
-            return nil
+              let imageUrl = json["sprites"]["front_default"].string,
+              let attributes = json["types"].array else {
+            throw EntitiyCreationError.init(responseJson: json.debugDescription)
         }
         self.id = id
         self.name = name
         self.imageUrl = imageUrl
-        self.attribute = attribute.compactMap {
-            Pokemon.Attribute(rawValue: $0["type"].stringValue)
+        self.attributes = attributes.compactMap {
+            Pokemon.Attribute(rawValue: $0["type"]["name"].stringValue)
         }
     }
 }

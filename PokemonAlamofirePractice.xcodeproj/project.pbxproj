@@ -21,6 +21,9 @@
 		1D1A73022A58F2C000132BC3 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1A73012A58F2C000132BC3 /* Pokemon.swift */; };
 		1D1A73042A59011800132BC3 /* PokemonImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1A73032A59011800132BC3 /* PokemonImageDownloader.swift */; };
 		1D1A73062A59029800132BC3 /* UIViewController+PokemonAlamofirePractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1A73052A59029800132BC3 /* UIViewController+PokemonAlamofirePractice.swift */; };
+		1D1A73082A5905EE00132BC3 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1A73072A5905EE00132BC3 /* APIRequest.swift */; };
+		1D1A730A2A590D6000132BC3 /* PokemonRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1A73092A590D6000132BC3 /* PokemonRepository.swift */; };
+		1D1A730C2A592AB500132BC3 /* PokemonUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1A730B2A592AB500132BC3 /* PokemonUsecase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,9 @@
 		1D1A73012A58F2C000132BC3 /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 		1D1A73032A59011800132BC3 /* PokemonImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonImageDownloader.swift; sourceTree = "<group>"; };
 		1D1A73052A59029800132BC3 /* UIViewController+PokemonAlamofirePractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+PokemonAlamofirePractice.swift"; sourceTree = "<group>"; };
+		1D1A73072A5905EE00132BC3 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		1D1A73092A590D6000132BC3 /* PokemonRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonRepository.swift; sourceTree = "<group>"; };
+		1D1A730B2A592AB500132BC3 /* PokemonUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonUsecase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +80,9 @@
 			children = (
 				1D1A72DF2A58796F00132BC3 /* AppDelegate.swift */,
 				1D1A72E12A58796F00132BC3 /* SceneDelegate.swift */,
+				1D1A73072A5905EE00132BC3 /* APIRequest.swift */,
+				1D1A73092A590D6000132BC3 /* PokemonRepository.swift */,
+				1D1A730B2A592AB500132BC3 /* PokemonUsecase.swift */,
 				1D1A73052A59029800132BC3 /* UIViewController+PokemonAlamofirePractice.swift */,
 				1D1A73032A59011800132BC3 /* PokemonImageDownloader.swift */,
 				1D1A73012A58F2C000132BC3 /* Pokemon.swift */,
@@ -196,7 +205,10 @@
 				1D1A73042A59011800132BC3 /* PokemonImageDownloader.swift in Sources */,
 				1D1A72FF2A58D72A00132BC3 /* PokemonTableViewCell.swift in Sources */,
 				1D1A72E02A58796F00132BC3 /* AppDelegate.swift in Sources */,
+				1D1A730C2A592AB500132BC3 /* PokemonUsecase.swift in Sources */,
+				1D1A730A2A590D6000132BC3 /* PokemonRepository.swift in Sources */,
 				1D1A73062A59029800132BC3 /* UIViewController+PokemonAlamofirePractice.swift in Sources */,
+				1D1A73082A5905EE00132BC3 /* APIRequest.swift in Sources */,
 				1D1A72E22A58796F00132BC3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
