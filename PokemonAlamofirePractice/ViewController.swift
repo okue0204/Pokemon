@@ -34,10 +34,11 @@ class ViewController: UIViewController {
             case .success(let pokemon):
                 self?.pokemonList.append(pokemon)
                 self?.tableView.reloadData()
-            case .failure(let error):
-                self?.showError(title: "",
+            case .failure:
+                self?.showError(title: "ポケモンセンターで回復して下さい",
                                 message: "",
-                                actioins: [])
+                                actioins: [UIAlertAction(title: "OK",
+                                                         style: .default)])
             }
         }
     }

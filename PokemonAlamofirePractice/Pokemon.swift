@@ -106,7 +106,7 @@ extension Pokemon {
               let name = json["name"].string,
               let imageUrl = json["sprites"]["front_default"].string,
               let attributes = json["types"].array else {
-            throw EntitiyCreationError.init(responseJson: json.debugDescription)
+            throw EntitiyCreationError(responseJson: json.debugDescription)
         }
         self.id = id
         self.name = name
